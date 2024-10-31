@@ -1,0 +1,25 @@
+services:
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-nuvem}
+      MYSQL_USER: ${MYSQL_USER:-projeto}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-projeto}
+    ports:
+      - 3307:3306
+
+  app:
+    image: ilacf/app-nuvem:latest
+    environment:
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_DATABASE: ${MYSQL_DATABASE:-nuvem}
+      DB_USER: ${MYSQL_USER:-projeto}
+      DB_PASSWORD: ${MYSQL_PASSWORD:-projeto}
+      DATABASE_URL: mysql+pymysql://${MYSQL_USER}:${MYSQL_PASSWORD}@db:3306/${MYSQL_DATABASE}
+      SENHA_SECRETA: ${SENHA_SECRETA}
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+    restart: on-failure

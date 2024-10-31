@@ -1,0 +1,8 @@
+fastapi
+httpx
+sqlalchemy
+pymysql
+python-dotenv
+uvicorn
+PyJWT
+cryptography
