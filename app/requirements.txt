@@ -6,3 +6,6 @@ python-dotenv
 uvicorn
 PyJWT
 cryptography
+mkdocs
+mkdocs-material
+myst-parser
