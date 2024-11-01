@@ -8,3 +8,4 @@ PyJWT
 cryptography
 mkdocs
 mkdocs-material
+myst-parser

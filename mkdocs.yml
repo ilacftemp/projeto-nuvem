@@ -1,0 +1,21 @@
+site_name: "Projeto Nuvem - Documentação Completa"
+site_url: "https://ilacftemp.github.io/projeto-nuvem"
+theme:
+  features:
+    - tabs
+  name: "material"
+  language: "pt"
+  palette:
+    primary: "cyan"
+    accent: "lilac"
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji
+  - pymdownx.tabbed
+  - attr_list
+
+plugins:
+  - search
