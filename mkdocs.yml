@@ -1,5 +1,4 @@
 site_name: "Projeto Nuvem - Documentação Completa"
-site_url: "https://ilacftemp.github.io/projeto-nuvem"
 theme:
   features:
     - tabs
