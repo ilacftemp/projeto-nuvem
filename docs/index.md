@@ -78,6 +78,10 @@ Para mais detalhes, consulte a [documentação dos endpoints](endpoints.md).
     Invoke-RestMethod -Uri "http://localhost:8000/consultar" -Method GET -Headers @{ "Authorization" = "Bearer {token_jwt_aqui}" }
     ```
 
+### Testando a API
+
+Video e fotos da execução e teste da API e dos endpoints [aqui](testando_api.md)
+
 ## Autenticação
 A autenticação é feita utilizando JWT. O JWT (JSON Web Token) é um padrão compacto e seguro para transmitir informações entre duas partes em formato JSON, comumente usado para autenticação. Ele possui três partes: o cabeçalho (definindo o tipo do token e algoritmo), o payload (contendo as informações do usuário e dados adicionais) e a assinatura, que garante a integridade do token. Na autenticação com JWT, o servidor gera o token após validar as credenciais do usuário, e o cliente o envia nas requisições seguintes para acesso a recursos protegidos.
 
