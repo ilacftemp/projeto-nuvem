@@ -9,23 +9,25 @@
       
       
       
+        <link rel="prev" href="..">
       
-        <link rel="next" href="deployAWS/">
+      
+        <link rel="next" href="../endpoints/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
     
     
       
-        <title>Projeto Nuvem - Documentação Completa</title>
+        <title>Guia de Configuração e Implantação no Amazon EKS - Projeto Nuvem - Documentação Completa</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#documentacao-do-projeto-de-nuvem" class="md-skip">
+        <a href="#guia-de-configuracao-e-implantacao-no-amazon-eks" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -86,7 +88,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="." title="Projeto Nuvem - Documentação Completa" class="md-header__button md-logo" aria-label="Projeto Nuvem - Documentação Completa" data-md-component="logo">
+    <a href=".." title="Projeto Nuvem - Documentação Completa" class="md-header__button md-logo" aria-label="Projeto Nuvem - Documentação Completa" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -106,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Documentação do Projeto de Nuvem
+              Guia de Configuração e Implantação no Amazon EKS
             
           </span>
         </div>
@@ -219,7 +221,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Projeto Nuvem - Documentação Completa" class="md-nav__button md-logo" aria-label="Projeto Nuvem - Documentação Completa" data-md-component="logo">
+    <a href=".." title="Projeto Nuvem - Documentação Completa" class="md-nav__button md-logo" aria-label="Projeto Nuvem - Documentação Completa" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -246,6 +248,26 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documentação do Projeto de Nuvem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -262,18 +284,18 @@
           
   
   <span class="md-ellipsis">
-    Documentação do Projeto de Nuvem
+    Guia de Configuração e Implantação no Amazon EKS
   </span>
   
 
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Documentação do Projeto de Nuvem
+    Guia de Configuração e Implantação no Amazon EKS
   </span>
   
 
@@ -295,58 +317,41 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#criado-por-ilana-chaia-finger" class="md-nav__link">
+  <a href="#1-configuracao-inicial-na-aws" class="md-nav__link">
     <span class="md-ellipsis">
-      Criado por Ilana Chaia Finger
+      1. Configuração Inicial na AWS
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#link-para-o-dockerhub-httpshubdockercomrilacfapp-nuvem" class="md-nav__link">
+  <a href="#2-configuracao-de-credenciais-do-aws-cli" class="md-nav__link">
     <span class="md-ellipsis">
-      Link para o DockerHub: https://hub.docker.com/r/ilacf/app-nuvem
+      2. Configuração de Credenciais do AWS CLI
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#introducao" class="md-nav__link">
+  <a href="#3-instalacao-do-aws-cli" class="md-nav__link">
     <span class="md-ellipsis">
-      Introdução
+      3. Instalação do AWS CLI
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuracao" class="md-nav__link">
+    <nav class="md-nav" aria-label="3. Instalação do AWS CLI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validacao" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuração
+      Validação
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#endpoints-da-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      Endpoints da API
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usando-a-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usando a API
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Usando a API">
+    <nav class="md-nav" aria-label="Validação">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -368,18 +373,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#consulta-das-10-musicas-mais-populares-no-deezer-atualmente" class="md-nav__link">
+  <a href="#consulta-da-api" class="md-nav__link">
     <span class="md-ellipsis">
-      Consulta das 10 músicas mais populares no Deezer atualmente:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#testando-a-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      Testando a API
+      Consulta da API:
     </span>
   </a>
   
@@ -389,22 +385,9 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#autenticacao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Autenticação
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#banco-de-dados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Banco de Dados
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -423,27 +406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="deployAWS/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Guia de Configuração e Implantação no Amazon EKS
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="endpoints/" class="md-nav__link">
+      <a href="../endpoints/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -463,7 +426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="testando_api/" class="md-nav__link">
+      <a href="../testando_api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -503,58 +466,41 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#criado-por-ilana-chaia-finger" class="md-nav__link">
+  <a href="#1-configuracao-inicial-na-aws" class="md-nav__link">
     <span class="md-ellipsis">
-      Criado por Ilana Chaia Finger
+      1. Configuração Inicial na AWS
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#link-para-o-dockerhub-httpshubdockercomrilacfapp-nuvem" class="md-nav__link">
+  <a href="#2-configuracao-de-credenciais-do-aws-cli" class="md-nav__link">
     <span class="md-ellipsis">
-      Link para o DockerHub: https://hub.docker.com/r/ilacf/app-nuvem
+      2. Configuração de Credenciais do AWS CLI
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#introducao" class="md-nav__link">
+  <a href="#3-instalacao-do-aws-cli" class="md-nav__link">
     <span class="md-ellipsis">
-      Introdução
+      3. Instalação do AWS CLI
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuracao" class="md-nav__link">
+    <nav class="md-nav" aria-label="3. Instalação do AWS CLI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#validacao" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuração
+      Validação
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#endpoints-da-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      Endpoints da API
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usando-a-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usando a API
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Usando a API">
+    <nav class="md-nav" aria-label="Validação">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -576,18 +522,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#consulta-das-10-musicas-mais-populares-no-deezer-atualmente" class="md-nav__link">
+  <a href="#consulta-da-api" class="md-nav__link">
     <span class="md-ellipsis">
-      Consulta das 10 músicas mais populares no Deezer atualmente:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#testando-a-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      Testando a API
+      Consulta da API:
     </span>
   </a>
   
@@ -597,22 +534,9 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#autenticacao" class="md-nav__link">
-    <span class="md-ellipsis">
-      Autenticação
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#banco-de-dados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Banco de Dados
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -634,96 +558,102 @@
   
 
 
-<h1 id="documentacao-do-projeto-de-nuvem">Documentação do Projeto de Nuvem</h1>
-<h4 id="criado-por-ilana-chaia-finger">Criado por Ilana Chaia Finger</h4>
-<h4 id="link-para-o-dockerhub-httpshubdockercomrilacfapp-nuvem">Link para o DockerHub: <a href="https://hub.docker.com/r/ilacf/app-nuvem">https://hub.docker.com/r/ilacf/app-nuvem</a></h4>
-<p>Este documento fornece uma visão geral do projeto, incluindo a configuração, endpoints da API e todos os requisitos para rodar a aplicação.</p>
-<h2 id="introducao">Introdução</h2>
-<p>Este projeto é uma aplicação web construída com FastAPI, SQLAlchemy, JWT para autenticação e usa uma base de dados MySQL para armazenar os dados de usuários e as senhas criptografadas com hash. Ele permite o registro e login de usuários de maneira segura e consulta (apenas para usuários autenticados) às 10 músicas mais populares do Deezer na data da requisição.</p>
-<h2 id="configuracao">Configuração</h2>
-<p>Para configurar o projeto, siga os passos abaixo:</p>
+<h1 id="guia-de-configuracao-e-implantacao-no-amazon-eks">Guia de Configuração e Implantação no Amazon EKS</h1>
+<p>Este guia detalha o processo de configuração de um ambiente Kubernetes no Amazon EKS, desde a criação da conta até a implantação da aplicação.</p>
+<h2 id="1-configuracao-inicial-na-aws">1. Configuração Inicial na AWS</h2>
+<p>Para iniciar, configurei a minha conta AWS com permissões administrativas, para garantir controle total sobre os recursos da AWS e a possibilidade de configurar credenciais adicionais para uso programático.</p>
+<h2 id="2-configuracao-de-credenciais-do-aws-cli">2. Configuração de Credenciais do AWS CLI</h2>
+<p>Para interagir com os serviços AWS diretamente do terminal, foi necessária a configuração do AWS Command Line Interface (CLI). O primeiro passo foi gerar uma <strong>Access Key</strong> no IAM, que nos da uma <strong>Secret Key</strong>.</p>
+<p>Essas credenciais são utilizadas pelo CLI para autenticação e execução de comandos de forma segura.</p>
+<h2 id="3-instalacao-do-aws-cli">3. Instalação do AWS CLI</h2>
+<p>O AWS CLI foi instalado seguindo a <a href="https://docs.aws.amazon.com/cli/v1/userguide/cli-chap-welcome.html">documentação oficial</a>. A seguir está um resumo dos passos seguidos:</p>
 <ol>
 <li>
-<p>Instale a imagem do docker com o seguinte comando: 
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>pull<span class="w"> </span>ilacf/app-nuvem:latest
-</code></pre></div></p>
+<p><strong>Download do instalador</strong>: <a href="https://s3.amazonaws.com/aws-cli/AWSCLI64PY3.msi">AWSCLI64PY3.msi</a>.</p>
 </li>
 <li>
-<p>Se quiser customizar suas variáveis de ambiente, crie um arquivo <code>.env</code> de acordo com o formato no arquivo <code>.env.example</code>. </p>
-</li>
-</ol>
-<div class="admonition help">
-<p class="admonition-title">Aviso</p>
-<p>Sempre tome cuidado com os arquivos <code>.env</code> e garanta que ele está no arquivo <code>.gitignore</code> antes de publicar seu projeto para não vazar suas credenciais ou dados sensíveis!</p>
-</div>
-<ol>
-<li>
-<p>Acesse o <strong>github</strong> e copie o arquivo <code>compose.yaml</code> para sua máquina a partir <a href="https://github.com/ilacftemp/projeto-nuvem/blob/master/compose.yaml">desse link</a>.</p>
+<p><strong>Execução do instalador MSI</strong>, a partir da execução do arquivo baixado e wizard de instalação.</p>
 </li>
 <li>
-<p>No mesmo diretório que criou o <code>compose.yaml</code>, rode o comando no terminal:
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
-</code></pre></div></p>
+<p><strong>Verificação da instalação</strong> com o comando: <code>aws --version</code></p>
 </li>
 <li>
-<p>Agora basta testar os <strong>endpoints</strong> pelo aplicativo <code>Postman</code> ou pelo <code>terminal</code>, como mostrado em <a href="#usando-a-api">Usando a API</a>.</p>
-</li>
-</ol>
-<h2 id="endpoints-da-api">Endpoints da API</h2>
-<p>A API possui os seguintes endpoints:</p>
+<p><strong>Configuração do ambiente</strong> com <code>aws configure</code>:</p>
 <ul>
-<li><strong>POST /registrar</strong>: Registra um novo usuário.</li>
-<li><strong>POST /login</strong>: Autentica um usuário e retorna um token JWT.</li>
-<li><strong>GET /consultar</strong>: Consulta dados protegidos (requer autenticação).</li>
+<li>Adição do Access Key e da Secret Access Key.</li>
+<li>Definição da região padrão (us-east-1).</li>
+<li>Definição do formato de saída padrão como  JSON.</li>
 </ul>
-<p>Para mais detalhes, consulte a <a href="endpoints/">documentação dos endpoints</a>.</p>
-<h2 id="usando-a-api">Usando a API</h2>
-<h3 id="registro-de-usuario">Registro de usuário:</h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Linux</label><label for="__tabbed_1_2">Windows</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:8000/registrar<span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;nome&quot;: &quot;seu_nome&quot;, &quot;email&quot;: &quot;seu_email@mail.com&quot;, &quot;senha&quot;: &quot;sua_senha&quot;}&#39;</span>
+</li>
+<li>
+<p><strong>Instalação e Configuração do eksctl</strong></p>
+<p>Para gerenciar <code>clusters Kubernetes</code> de forma simplificada no Amazon EKS, utilizamos o <code>eksctl</code>. Ele automatiza a criação e configuração dos clusters, reduzindo a complexidade operacional.</p>
+<p>Comando executado:</p>
+<div class="highlight"><pre><span></span><code>eksctl<span class="w"> </span>create<span class="w"> </span>cluster<span class="w"> </span>--name<span class="w"> </span>cluster-projnuvem<span class="w"> </span>--nodes<span class="w"> </span><span class="m">2</span>
 </code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>Invoke-RestMethod<span class="w"> </span>-Uri<span class="w"> </span><span class="s2">&quot;http://localhost:8000/registrar&quot;</span><span class="w"> </span>-Method<span class="w"> </span>POST<span class="w"> </span>-Headers<span class="w"> </span>@<span class="o">{</span><span class="w"> </span><span class="s2">&quot;Content-Type&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;application/json&quot;</span><span class="w"> </span><span class="o">}</span><span class="w"> </span>-Body<span class="w"> </span><span class="s1">&#39;{ &quot;nome&quot;: &quot;seu_nome&quot;, &quot;email&quot;: &quot;seu_email@mail.com&quot;, &quot;senha&quot;: &quot;sua_senha&quot; }&#39;</span>
+<p><strong>Nome do cluster:</strong> cluster-projnuvem.
+<strong>Nós:</strong> 2, conforme especificado na documentação do projeto.</p>
+<p>Esse comando criou um cluster funcional com dois nós prontos para execução de workloads.</p>
+</li>
+<li>
+<p><strong>Atualização do kubeconfig</strong></p>
+<p>Após a criação do cluster, foi necessário configurar o arquivo <code>kubeconfig</code> local. Esse arquivo permite o gerenciamento do cluster através do kubectl, a principal ferramenta de interação com Kubernetes.</p>
+<p>Comando utilizado:</p>
+<div class="highlight"><pre><span></span><code>aws<span class="w"> </span>eks<span class="w"> </span>update-kubeconfig<span class="w"> </span>--name<span class="w"> </span>cluster-projnuvem
 </code></pre></div>
-</div>
-</div>
-</div>
-<h3 id="login-de-usuario">Login de usuário:</h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Linux</label><label for="__tabbed_2_2">Windows</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:8000/login<span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;email&quot;: &quot;seu_email@mail.com&quot;, &quot;senha&quot;: &quot;sua_senha&quot;}&#39;</span>
+<p>Esse passo garantiu a conexão entre o ambiente local e o cluster no EKS, habilitando a execução de comandos Kubernetes diretamente.</p>
+</li>
+<li>
+<p><strong>Criação dos Arquivos YAML para Deployments</strong></p>
+<p>Para implantar os serviços no Kubernetes, foram criados dois arquivos YAML baseados no <code>compose.yaml</code> original do projeto:</p>
+<p><code>db-deployment.yaml</code>: Define a configuração do banco de dados MySQL.
+<code>app-deployment.yaml</code>: Especifica a aplicação FastAPI.</p>
+<p><strong>Função dos Deployments:</strong></p>
+<pre><code>- Banco de Dados:
+    - Garante a persistência e escalabilidade do MySQL.
+    - Configura um serviço interno para comunicação com a aplicação.
+
+- Aplicação:
+    - Implanta a API da aplicação.
+    - Expõe a aplicação ao público utilizando um LoadBalancer.
+</code></pre>
+</li>
+<li>
+<p><strong>Aplicação dos Deployments no Cluster</strong></p>
+<p>Com os arquivos YAML configurados, os deployments foram aplicados ao cluster com os seguintes comandos:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>db-deployment.yaml
+kubectl<span class="w"> </span>apply<span class="w"> </span>-f<span class="w"> </span>app-deployment.yaml
 </code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>Invoke-RestMethod<span class="w"> </span>-Uri<span class="w"> </span><span class="s2">&quot;http://localhost:8000/login&quot;</span><span class="w"> </span>-Method<span class="w"> </span>POST<span class="w"> </span>-Headers<span class="w"> </span>@<span class="o">{</span><span class="w"> </span><span class="s2">&quot;Content-Type&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;application/json&quot;</span><span class="w"> </span><span class="o">}</span><span class="w"> </span>-Body<span class="w"> </span><span class="s1">&#39;{ &quot;email&quot;: &quot;seu_email@mail.com&quot;, &quot;senha&quot;: &quot;sua_senha&quot; }&#39;</span>
+<p>Para verificar o status dos pods e serviços, foram utilizados:</p>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods
+kubectl<span class="w"> </span>get<span class="w"> </span>services
 </code></pre></div>
-</div>
-</div>
-</div>
-<h3 id="consulta-das-10-musicas-mais-populares-no-deezer-atualmente">Consulta das 10 músicas mais populares no Deezer atualmente:</h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Linux</label><label for="__tabbed_3_2">Windows</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span>http://localhost:8000/consultar<span class="w"> </span>-H<span class="w"> </span><span class="s1">&#39;Authorization: Bearer {token_jwt_aqui}&#39;</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>Invoke-RestMethod<span class="w"> </span>-Uri<span class="w"> </span><span class="s2">&quot;http://localhost:8000/consultar&quot;</span><span class="w"> </span>-Method<span class="w"> </span>GET<span class="w"> </span>-Headers<span class="w"> </span>@<span class="o">{</span><span class="w"> </span><span class="s2">&quot;Authorization&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Bearer {token_jwt_aqui}&quot;</span><span class="w"> </span><span class="o">}</span>
-</code></pre></div>
-</div>
-</div>
-</div>
-<h3 id="testando-a-api">Testando a API</h3>
-<p>Video e fotos da execução e teste da API e dos endpoints <a href="testando_api/">aqui</a></p>
-<h2 id="autenticacao">Autenticação</h2>
-<p>A autenticação é feita utilizando JWT. O JWT (JSON Web Token) é um padrão compacto e seguro para transmitir informações entre duas partes em formato JSON, comumente usado para autenticação. Ele possui três partes: o cabeçalho (definindo o tipo do token e algoritmo), o payload (contendo as informações do usuário e dados adicionais) e a assinatura, que garante a integridade do token. Na autenticação com JWT, o servidor gera o token após validar as credenciais do usuário, e o cliente o envia nas requisições seguintes para acesso a recursos protegidos.</p>
-<p>O uso de JWT oferece várias vantagens, como a possibilidade de uma autenticação sem estado (stateless), facilitando a escalabilidade, além de ser seguro e flexível, permitindo adicionar informações de usuário e expiração diretamente no token. Isso o torna ideal para aplicações distribuídas e APIs, onde a autenticação precisa ser leve e independente de sessões no servidor.</p>
-<h2 id="banco-de-dados">Banco de Dados</h2>
-<p>O projeto utiliza um banco de dados MySQL gerado automaticamente pelo docker durante a inicialização.</p>
+<p>Esses comandos garantem que os serviços estejam em execução e acessíveis, como pode-se observar na seguinte imagem:</p>
+<p><img alt="alt text" src="../imgs/image4.png" /></p>
+</li>
+<li>
+<p><strong>Acesso à Aplicação</strong></p>
+<p>O serviço da aplicação foi configurado com um <code>LoadBalancer</code>. Para acessar a aplicação:</p>
+<ul>
+<li>
+<p>Obtenha o endereço externo:
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>service<span class="w"> </span>app
+</code></pre></div></p>
+</li>
+<li>
+<p>Validar a aplicação via testes da API no terminal, assim como anteriormente. Lembre-se de trocar o IP <code>localhost</code> para o IP externo do serviço app:
+http://EXTERNAL-IP:8000</p>
+</li>
+</ul>
+<h3 id="validacao">Validação</h3>
+<h4 id="registro-de-usuario">Registro de usuário:</h4>
+<p><img alt="Registro de usuário" src="../imgs/registrar-aws.png" /></p>
+<h4 id="login-de-usuario">Login de usuário:</h4>
+<p><img alt="Login de usuário" src="../imgs/login-aws.png" /></p>
+<h4 id="consulta-da-api">Consulta da API:</h4>
+<p><img alt="Consulta da API" src="../imgs/consultar-aws.png" /></p>
+</li>
+</ol>
 
 
 
@@ -772,10 +702,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.tabs.link"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
     
     
-      <script src="assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>

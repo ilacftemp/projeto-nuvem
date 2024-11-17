@@ -44,36 +44,40 @@ Para mais detalhes, consulte a [documentação dos endpoints](endpoints.md).
 ### Registro de usuário:
 
 
-!!! tab "Linux" 
+=== "Linux" 
     ```sh
     curl -X POST http://localhost:8000/registrar -d '{"nome": "seu_nome", "email": "seu_email@mail.com", "senha": "sua_senha"}'
     ```
 
-!!! tab "Windows"
+=== "Windows"
     ```sh
     Invoke-RestMethod -Uri "http://localhost:8000/registrar" -Method POST -Headers @{ "Content-Type" = "application/json" } -Body '{ "nome": "seu_nome", "email": "seu_email@mail.com", "senha": "sua_senha" }'
     ```
 
 ### Login de usuário:
 
-!!! tab "Linux" 
+=== "Linux"
+
     ```sh
     curl -X POST http://localhost:8000/login -d '{"email": "seu_email@mail.com", "senha": "sua_senha"}'
     ```
 
-!!! tab "Windows"
+=== "Windows"
+
     ```sh
     Invoke-RestMethod -Uri "http://localhost:8000/login" -Method POST -Headers @{ "Content-Type" = "application/json" } -Body '{ "email": "seu_email@mail.com", "senha": "sua_senha" }'
     ```
 
 ### Consulta das 10 músicas mais populares no Deezer atualmente:
 
-!!! tab "Linux" 
+=== "Linux"
+
     ```sh
     curl -X GET http://localhost:8000/consultar -H 'Authorization: Bearer {token_jwt_aqui}'
     ```
 
-!!! tab "Windows"
+=== "Windows"
+
     ```sh
     Invoke-RestMethod -Uri "http://localhost:8000/consultar" -Method GET -Headers @{ "Authorization" = "Bearer {token_jwt_aqui}" }
     ```
