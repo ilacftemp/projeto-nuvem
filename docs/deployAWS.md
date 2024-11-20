@@ -113,3 +113,7 @@ O AWS CLI foi instalado seguindo a [documentação oficial](https://docs.aws.ama
 
     #### Consulta da API:
     ![Consulta da API](./imgs/consultar-aws.png)
+
+    ### Video de teste
+
+    [https://drive.google.com/file/d/18933qpHzV_urL01rw8eejWsuAWL2aPGQ/view?usp=drive_link](https://drive.google.com/file/d/18933qpHzV_urL01rw8eejWsuAWL2aPGQ/view?usp=drive_link)
